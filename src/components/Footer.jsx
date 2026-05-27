@@ -5,7 +5,7 @@ function Footer() {
     <Box
       component="footer"
       sx={{
-        bgcolor: 'primary.main',
+        bgcolor: '#800020',
         color: 'white',
         textAlign: 'center',
         p: 2,

@@ -3,9 +3,14 @@ import { Link } from 'react-router-dom'
 
 function Header() {
   return (
-    <AppBar position="static">
-      <Toolbar>
-        <Typography variant="h6" sx={{ flexGrow: 1 }}>
+    <AppBar position="static" sx={{background: '#800020'}}>
+      <Toolbar sx={{ position: 'relative' }}>
+        <Typography variant="h6" 
+        sx={{
+          position: 'absolute',
+          left: '50%',
+          transform:'translatex(-50%)',
+          }}>
           My Shop
         </Typography>
 
