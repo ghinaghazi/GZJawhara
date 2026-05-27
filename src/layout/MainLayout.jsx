@@ -5,10 +5,10 @@ import { Box } from '@mui/material'
 
 function MainLayout() {
   return (
-    <Box display="flex" flexDirection="column" minHeight="100vh">
+    <Box sx={{ display: 'flex', flexDirection: 'column', minHeight: '100vh' }}>
       <Header />
 
-      <Box component="main" flexGrow={1} p={2}>
+      <Box component="main" sx={{ flexGrow: 1, p: 2 }}>
         <Outlet />
       </Box>
 
