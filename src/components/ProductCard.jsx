@@ -1,5 +1,6 @@
 import { Card, CardMedia, CardContent, CardActions, Typography, Button } from '@mui/material'
 import { useCart } from '../context/CartContext'
+import { asset } from '../utils/asset'
 
 function ProductCard({ product }) {
   const { addItem } = useCart()
@@ -9,7 +10,7 @@ function ProductCard({ product }) {
       <CardMedia
         component="img"
         height="220"
-        image={product.image}
+        image={asset(product.image)}
         alt={product.name}
       />
       <CardContent sx={{ flexGrow: 1 }}>

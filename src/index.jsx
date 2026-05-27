@@ -13,7 +13,7 @@ createRoot(document.getElementById('root')).render(
       <CssBaseline />
       <AuthProvider>
         <CartProvider>
-          <BrowserRouter>
+          <BrowserRouter basename={import.meta.env.BASE_URL}>
             <App />
           </BrowserRouter>
         </CartProvider>

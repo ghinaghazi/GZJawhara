@@ -2,6 +2,7 @@ import { Box, Typography, Button } from '@mui/material'
 import { Link } from 'react-router-dom'
 import { featuredProducts } from '../data/products'
 import ProductGrid from '../components/ProductGrid'
+import { asset } from '../utils/asset'
 
 function Home() {
   return (
@@ -10,7 +11,7 @@ function Home() {
       <Box
         sx={{
           height: { xs: '50vh', md: '70vh' },
-          backgroundImage: 'url(/images/intro.jpg)',
+          backgroundImage: `url(${asset('/images/intro.jpg')})`,
           backgroundSize: 'cover',
           backgroundPosition: 'center',
           borderRadius: 2,
